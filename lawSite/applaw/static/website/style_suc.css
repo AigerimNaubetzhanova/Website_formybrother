@@ -1,0 +1,240 @@
+
+/* Android 2.3 :checked fix */
+@keyframes fake {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*body {*/
+/*  animation: fake 1s infinite;*/
+/*}*/
+
+.worko-tabs {
+  margin: 20px;
+  margin-outside: 30px;
+  padding-top:250px;
+    padding-left:200px;
+  width: 80%;
+  background: #353535;
+}
+.worko-tabs .state {
+  position: absolute;
+  left: -10000px;
+}
+.worko-tabs .flex-tabs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.worko-tabs .flex-tabs .tab {
+  flex-grow: 1;
+  max-height:1000px;
+}
+.worko-tabs .flex-tabs .panel {
+  background-color: white;
+  padding: 20px;
+  height: 1000px;
+  display: none;
+  width: 100%;
+  flex-basis: auto;
+}
+.worko-tabs .tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #eee;
+  cursor: hand;
+  cursor: pointer;
+  border-left: 10px solid #ccc;
+}
+.worko-tabs .tab:hover {
+  background-color: #fff;
+}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
+  background-color: darkgrey;
+  cursor: default;
+  border-left-color: #69be28;
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .flex-tabs {
+    flex-direction: column;
+  }
+  .flex-tabs .tab {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .flex-tabs .tab:last-of-type {
+    border-bottom: none;
+  }
+  .flex-tabs #tab-one-label {
+    order: 1;
+  }
+  .flex-tabs #tab-two-label {
+    order: 3;
+  }
+  .flex-tabs #tab-three-label {
+    order: 5;
+  }
+  .flex-tabs #tab-four-label {
+    order: 7;
+  }
+  .flex-tabs #tab-one-panel {
+    order: 2;
+  }
+  .flex-tabs #tab-two-panel {
+    order: 4;
+  }
+  .flex-tabs #tab-three-panel {
+    order: 6;
+  }
+  .flex-tabs #tab-four-panel {
+    order: 8;
+  }
+
+  #tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
+    border-bottom: none;
+  }
+
+  #tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.first-review{
+    width: 300px;
+    height: 350px;
+  border: 1px solid grey;
+  padding: 30px;
+  margin: 20px;
+  margin-left: 0px;
+  background: white;
+
+}
+.first-review-text{
+  padding-top: -10px;
+  margin-top: 0px;
+}
+.resolve{
+  padding-top: 300px;
+}
+
+.second-review{
+    width: 300px;
+    height: 430px;
+  border: 1px solid grey;
+  padding: 30px;
+  margin: 20px;
+  top: 329px;
+  left: 605px;
+  background: white;
+  float: right;
+  position: absolute;
+
+}
+.second-review-text{
+  padding-top: -10px;
+  margin-top: 0px;
+}
+.third-review{
+    width: 300px;
+    height: 390px;
+  border: 1px solid grey;
+  padding: 30px;
+  background: white;
+  margin: 20px;
+  top: 329px;
+  left: 990px;
+  float: right;
+  position: absolute;
+
+}
+.third-review-text{
+  padding-top: -10px;
+  margin-top: 0px;
+}
+
+.fourth-review{
+    width: 275px;
+    height: 390px;
+  border: 1px solid grey;
+  padding: 30px;
+  background: white;
+  margin: 20px;
+  top: 329px;
+  left: 1375px;
+  float: right;
+  position: absolute;
+
+}
+.fourth-review-text{
+  padding-top: -10px;
+  margin-top: 0px;
+}
+
+.sec_first-review{
+ width: 675px;
+    height: 450px;
+  border: 1px solid grey;
+  padding: 30px;
+  background: white;
+  margin: 20px;
+  margin-left: 0px;
+
+}
+.sec_first-review-text{
+  padding-top: -10px;
+  margin-top: -5px;
+}
+
+.sec_Second-review{
+width: 675px;
+    height: 450px;
+  border: 1px solid grey;
+  padding: 30px;
+  margin: 20px;
+  top: 329px;
+  left: 978px;
+  float: right;
+  position: absolute;
+  background: white;
+
+}
+.sec_second-review-text{
+  padding-top: -10px;
+  margin-top: 0px;
+}
+.third_first-review{
+ width: 680px;
+    height: 350px;
+  border: 1px solid grey;
+  padding: 30px;
+  margin: 20px;
+  margin-left: 0px;
+  background: white;
+
+}
+.third_first-review-text{
+  padding-top: -10px;
+  margin-top: 0px;
+}

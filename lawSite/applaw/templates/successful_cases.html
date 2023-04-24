@@ -1,0 +1,153 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}">
+</head>
+        <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/website/style_suc.css" type="text/css" />
+<body>
+<div class="parent">
+        <a href="{% url 'index' %}"><img src="../static/images/logoWhite.png" style="height: 100px; width: 420px; padding-top:40px;" class="child1"></a>
+        <div class="child2">
+        <nav id="menu">
+
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a href="#">Why us?</a>
+                </div>
+<!--                <div class="sub-menu">-->
+<!--                    <div class="icon-box">-->
+<!--                        <div class="icon"><i class="fal fa-wind-turbine"></i></div>-->
+<!--                        <div class="text">-->
+<!--                            <div class="title">Turbo Editor <i class="far fa-arrow-right"></i></div>-->
+<!--                            <div class="sub-text">Edit your code while slowing down time.</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="menu-item highlight">
+                <div class="menu-text">
+                    <a href="#">Legal documents and contracts</a>
+                </div>
+                <div class="sub-menu double">
+                    <div class="icon-box gb a">
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/guidelines_for_the_identification_of_oil_fuel_and_chemical_containers_and_equipment_7-16.docx">Guidelines for the Identification of Oil, Fuel, and Chemical Storage Containers and Equipment</a>
+                        </div>
+                    </div>
+                    <div class="icon-box gb b">
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/secondary_containment_requirements_7-16.docx">Requirements for Secondary Containment for 55-Gallon Drums</a>
+                        </div>
+                    </div>
+                    <div class="icon-box gb c">
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/spillreporting_0.docx">Spill/Release Cleanup and Reporting Requirements</a>
+                        </div>
+                    </div>
+                    <div class="icon-box gb d">
+                        <div class="text">
+
+                            <a class="title" href="../static/legalDocsContracts/pollution_prevention_initiatives_9-17.docx">Pollution Prevention Initiatives</a>
+
+                        </div>
+                    </div>
+                    <div class="icon-box gb e">
+
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/contractor_spill_prevention_and_response_rev_11-22.docx">Fuel Handling Practices, Spill Response, and Responsibilities for Contractors</a>
+
+                        </div>
+                    </div>
+                    <div class="sub-menu-holder"></div>
+                </div>
+            </div>
+            <div class="menu-item highlight">
+                <div class="menu-text">
+                    <a href="{% url 'successful_cases' %}">Successful cases</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a href="{% url 'index' %}" id="consultaion">Get free consultation</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="worko-tabs">
+
+    <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+    <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+    <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+
+    <div class="tabs flex-tabs">
+        <label for="tab-one" id="tab-one-label" class="tab">Sound pollution</label>
+        <label for="tab-two" id="tab-two-label" class="tab">Industrial pollution</label>
+        <label for="tab-three" id="tab-three-label" class="tab">Deforestation and urban planning</label>
+
+
+        <div id="tab-one-panel" class="panel active">
+            <div class="first-review">
+                <h3 class="first-review-text">CASE OF POWELL AND RAYNER v. THE UNITED KINGDOM</h3>
+                <h4>Date of issue: 21.02.2008</h4>
+                <h4>CASE 9310/81</h4>
+                <p>Applicants who lived in close proximity to Heathrow Airport considered the permitted noise level unacceptable, and the measures taken government to reduce noise levels, insufficient.</p>
+                <p>The European Court of Human Rights has ruled that the operation of major international airports located near densely populated residential areas, is necessary for the economic well-being of countries...</p>
+            </div>
+            <div class="Second-review">
+                <h3 class="second-review-text">CASE OF HATTON v. THE UNITED KINGDOM</h3>
+                <h4>Date of issue: 07.08.2013</h4>
+                <h4>CASE 36022/97</h4>
+                <p>The applicants, who lived close to Heathrow Airport, complained of increased noise in the area around their homes following a change in government policy regarding night flights in 1993.  They claimed that planes flying at night regularly woke them up with their noise, which had a negative effect on their health.</p>
+                <p>The European Court of Human Rights has ruled that the operation of major international airports located near densely populated residential areas, is necessary for the economic well-being of countries...</p>
+            </div>
+            <div class="third-review">
+                <h3 class="third-review-text">CASE OF DEÉS v. Hungary</h3>
+                <h4>Date of issue: 09.11.2010</h4>
+                <h4>CASE 2345/06</h4>
+                <p>The applicant complained under Article 8 of severe inconvenience (noise, vibration, pollution) caused by the fact that his street had been turned into an unregulated heavy traffic flow.</p>
+                <p>The Court considered that, despite the efforts of the authorities to restrict and regulate the traffic on the said street, the applicant had for a long period of time experienced serious inconvenience in the form of loud noise.  Thus, in the opinion of the Court, there has been a violation of Article 8.</p>
+            </div>
+            <div class="fourth-review">
+                <h3 class="fourth-review-text">CASE OF Moreno Gomez v. Spain</h3>
+                <h4>Date of issue: 11.06.2014</h4>
+                <h4>CASE 4143/02)</h4>
+                <p> The applicant complained about constant noise from nightclubs located near her house.  She claimed that the noise caused her a chronic sleep disorder.</p>
+                <p>Considering the intensity of noise pollution (exceeding the permissible noise level at night) and the fact that this situation had continued for several years, the Court decided that there had been a violation of Article 8.</p>
+            </div>
+        </div>
+        <div id="tab-two-panel" class="panel">
+             <div class="sec_first-review">
+                <h3 class="sec_first-review-text">CASE OF Threat to human health Öneryıldız v. Turkey</h3>
+                <h4>Date of issue: 30.11.2014</h4>
+                <h4>CASE 48939/99</h4>
+                <p>The applicant built himself a dwelling on the territory of the city dump, where garbage from four municipal districts was taken.  He did not receive a building permit.  In April 1993, a methane explosion occurred at the landfill.  As a result of the explosion, an erupted stream of sewage covered more than 10 houses, including the applicant's house.  Nine of the applicant's relatives were killed.  He complained that the authorities had not taken steps to prevent an explosion, despite the fact that, according to experts, it was necessary to take measures, since there was a possibility of an explosion.</p>
+                <p>The court found a violation of Article 2. The authorities did not provide the residents of the slums with information that it was dangerous to live in the dump.  Even if this were done, the authorities would still remain responsible for what happened, because they did not take practical measures to eliminate threats to people's lives.  The regulatory framework was flawed, as the landfill functioned without proper control.  The urban planning policy also turned out to be flawed and, undoubtedly, played a role in the chain of events that led to the tragedy.</p>
+            </div>
+            <div class="sec_Second-review">
+                <h3 class="sec_second-review-text">CASE OF KazOilGas v. Kazakhstan</h3>
+                <h4>Date of issue: 06.09.2018</h4>
+                <h4>CASE 55723/00</h4>
+                <p>The applicant in the case was Mr. Mangouras, a former captain of the tanker Prestige, which in November 2002, while sailing along the sea coast of the Caspian Sea, was wrecked, spilling all the oil it was carrying.  A criminal case was initiated.  The applicant was taken into custody.  After 83 days, he was released on bail of 3 million euros.  This amount was paid by the insurers of Prestige.  The applicant complained that the amount of bail, set without regard to his personal situation, was extremely high.</p>
+                <p>The Court held that, in interpreting the requirements of Article 5 § 3, contemporary realities must be taken into account, namely the growing and legitimate interest both in Europe and at the international level in environmental crimes, as well as the trend towards the use of criminal law as a means of securing environmental obligations arising from Kazakhstan and international law.  The Court concluded that, given the exceptional nature of the applicant's case and the enormous environmental damage caused by pollution of the marine environment, which rarely reaches such proportions, it was not surprising that the courts set the amount of bail taking into account the level of liability, seeking to ensure that the perpetrators did not  could evade justice.  There was no violation of Article 5 § 3.</p>
+            </div>
+        </div>
+        <div id="tab-three-panel" class="panel">
+            <div class="third_first-review">
+                <h3 class="third_first-review-text">CASE OF Hamer v. Kazakhstan</h3>
+                <h4>Date of issue: 11.27.2017</h4>
+                <h4>CASE 21861/03</h4>
+                <p>The applicant owned a house built by her parents in a forest belt without obtaining a building permit.  She was sued for building a house in violation of forest law.</p>
+                <p>The court decided that the applicant should restore the site to its previous state.  The house was forcibly demolished.  The applicant complained of a violation of her right to respect for private life.  For the first time in its practice, the Court stated that the environment, although not explicitly mentioned in the Convention, nevertheless represents a value in the preservation of which both society and public authorities are interested.  Economic considerations and even property rights should not take precedence over environmental issues, especially when there is legislation in place on this issue.  The public authorities had an obligation to take measures to protect the environment.  There was no violation of Article 1 of Protocol No. 1.</p>            </div>
+        </div>
+        <div id="tab-four-panel" class="panel">
+            Tab four content
+        </div>
+    </div>
+
+</div>
+</div>
+</body>

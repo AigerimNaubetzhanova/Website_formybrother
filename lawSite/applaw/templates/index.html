@@ -1,0 +1,95 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}">
+</head>
+        <script src="https://kit.fontawesome.com/628c8d2499.js" crossorigin="anonymous"></script>
+        <video autoplay muted loop id="myVideo">
+          <source src="../static/images/bckgvideo.mp4" type="video/mp4">
+        </video>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+<div class="parent">
+        <a href="{% url 'index' %}"><img src="../static/images/logoWhite.png" style="height: 100px; width: 420px; padding-top:40px;" class="child1"></a>
+        <div class="child2">
+        <nav id="menu">
+
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a href="#">Why us?</a>
+                </div>
+<!--                <div class="sub-menu">-->
+<!--                    <div class="icon-box">-->
+<!--                        <div class="icon"><i class="fal fa-wind-turbine"></i></div>-->
+<!--                        <div class="text">-->
+<!--                            <div class="title">Turbo Editor <i class="far fa-arrow-right"></i></div>-->
+<!--                            <div class="sub-text">Edit your code while slowing down time.</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+            <div class="menu-item highlight">
+                <div class="menu-text">
+                    <a href="#">Legal documents and contracts</a>
+                </div>
+                <div class="sub-menu double">
+                    <div class="icon-box gb a">
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/guidelines_for_the_identification_of_oil_fuel_and_chemical_containers_and_equipment_7-16.docx">Guidelines for the Identification of Oil, Fuel, and Chemical Storage Containers and Equipment</a>
+                        </div>
+                    </div>
+                    <div class="icon-box gb b">
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/secondary_containment_requirements_7-16.docx">Requirements for Secondary Containment for 55-Gallon Drums</a>
+                        </div>
+                    </div>
+                    <div class="icon-box gb c">
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/spillreporting_0.docx">Spill/Release Cleanup and Reporting Requirements</a>
+                        </div>
+                    </div>
+                    <div class="icon-box gb d">
+                        <div class="text">
+
+                            <a class="title" href="../static/legalDocsContracts/pollution_prevention_initiatives_9-17.docx">Pollution Prevention Initiatives</a>
+
+                        </div>
+                    </div>
+                    <div class="icon-box gb e">
+
+                        <div class="text">
+                            <a class="title" href="../static/legalDocsContracts/contractor_spill_prevention_and_response_rev_11-22.docx">Fuel Handling Practices, Spill Response, and Responsibilities for Contractors</a>
+
+                        </div>
+                    </div>
+                    <div class="sub-menu-holder"></div>
+                </div>
+            </div>
+            <div class="menu-item highlight">
+                <div class="menu-text">
+                    <a href="{% url 'successful_cases' %}">Successful cases</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a href="#" id="consultaion">Get free consultation</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="parent1">
+        <div class="parent2">
+            <div class="blackbox"></div>
+            <img id="Schedule" src="../static/images/Schedule1.png">
+                <input type="text" class="form__field_fname" /> <img src="../static/images/star.png" class="star1">
+                <input type="text" class="form__field_lname" /> <img src="../static/images/star.png" class="star2">
+                <input type="email" class="form__field_email" /> <img src="../static/images/star.png" class="star3">
+                <input type="text" class="form__field_phone" /> <img src="../static/images/star.png" class="star4">
+                <input type="text" class="form__field_city" /> <img src="../static/images/star.png" class="star5">
+                <input type="msg" class="form__field_msg" />
+                <a href="#"><button  type="button" class="btn">Send</button></a>
+        <img src="../static/images/words.png" id="words">
+    </div>
+
+</div>
+
